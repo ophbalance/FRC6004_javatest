@@ -24,7 +24,7 @@ public class DriveTank extends Command {
     protected void execute() {
     		double leftSpeed = deadband(Robot.oi.driverController.getRawAxis(RobotMap.JOYSTICK_MOVE_LEFT_AXIS),.1); 
     		double rightSpeed = deadband(Robot.oi.driverController.getRawAxis(RobotMap.JOYSTICK_MOVE_RIGHT_AXIS),.1);
-    		boolean twitch = true;
+    		//boolean twitch = true;
     		Robot.drivetrain.tankDrive(-leftSpeed, rightSpeed);
     }
     
